@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "description": "JavaScript starterkit",
   "scripts": {
-    "prestart": "node buildScripts/startMessage.js",
+    "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel security-check open:src",
     "security-check": "nsp check",
-    "open:src": "node buildScripts/srcServer.js",
+    "open:src": "babel-node buildScripts/srcServer.js",
     "localtunnel": "lt --port 3000",
     "share": "npm-run-all --parallel open:src localtunnel"
   },
@@ -21,7 +21,7 @@
     "babel-cli": "6.16.0",
     "babel-core": "6.17.0",
     "babel-loader": "6.2.5",
-    "babel-preset-latest": "6.16.0",
+    "babel-preset-env": "1.6.0",
     "babel-register": "6.16.3",
     "chai": "3.5.0",
     "chalk": "1.1.3",
