@@ -2,4 +2,5 @@
 JavaScript Development Starter Kit
 
 # Tasks
-- start server: `node buildScripts/srcServer.js`
+- start server: `npm start`
+- share with localtunnel : `npm run share`
